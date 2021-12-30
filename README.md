@@ -5,6 +5,7 @@
     
 # Description
 This is a command line application that recieves informations about employees and generates a HTML page that has cards with varying information depending on the employees role. This application uses JavaScript, Node.js, Jest, HTML and CSS.
+<img width="1440" alt="Screen Shot 2021-12-30 at 5 25 16 PM" src="https://user-images.githubusercontent.com/91788324/147794178-872599f9-2be9-4a19-8f96-4d971da5887e.png">
 
 ### Table of Contents
 * [Description](#description)
