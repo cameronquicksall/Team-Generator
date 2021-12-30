@@ -25,11 +25,12 @@ This is a command line application that recieves informations about employees an
 ## Tests
     npm test
 <img width="565" alt="Screen Shot 2021-12-30 at 5 27 00 PM" src="https://user-images.githubusercontent.com/91788324/147794250-5b0e5782-17da-47c5-9e95-2fbd44a45c9c.png">
+https://watch.screencastify.com/v/oG1tFlmd5kUOitwBtdRP
 
 ## Contributors
     Cameron Quicksall
 
 #### Questions
 [Email Me](mailto:cameron.quicksall70@gmail.com)
-https://watch.screencastify.com/v/oG1tFlmd5kUOitwBtdRP
+
     
