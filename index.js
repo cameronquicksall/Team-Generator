@@ -3,9 +3,15 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 
+const path = require("path");
+const fs = require("fs");
+
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
+const render = require("./src/generateHTML");
 const questions = [];
 
-function initApp() {
+function initEmployee() {
     inquirer.prompt([
         {
             type: "input",
@@ -36,7 +42,6 @@ function initApp() {
     ]).then(function (answers) {
         const manager = new Manager(answers.name, answers.id, answers.email, answers.office);
         questions.push(manager);
-        //calls addTeamMember() prompt
         addTeamMember();
     })
 }
@@ -62,7 +67,8 @@ function addTeamMember() {
         } else if(answer.empType === "Intern") {
             createIntern();
         } else {
-            console.log("Success! Your team has been generated.")
+            console.log("Your team has been created!")
+            buildTeam();
         }
     })
 }
@@ -150,4 +156,11 @@ function createIntern() {
     })
 }
 
-initApp();
+function buildTeam() {
+    if(!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR)
+    }
+    fs.writeFileSync(outputPath, render(questions), "utf-8");
+}
+
+initEmployee();
