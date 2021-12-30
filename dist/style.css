@@ -1,0 +1,27 @@
+header {
+    color: rgb(2,2,2);
+    background-color: rgba(223, 164, 164, 0.836);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+}
+
+
+.card {
+    padding: 10px;
+    margin: 15px;
+}
+
+.card-header {
+    color: rgb(17, 11, 11);
+    background-color: rgba(223, 164, 164, 0.836);
+
+}
