@@ -30,5 +30,6 @@ This is a command line application that recieves informations about employees an
     Cameron Quicksall
 
 #### Questions
-[email](mailto:cameron.quicksall70@gmail.com)
+[Email Me](mailto:cameron.quicksall70@gmail.com)
+https://watch.screencastify.com/v/oG1tFlmd5kUOitwBtdRP
     
